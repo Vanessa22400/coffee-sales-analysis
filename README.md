@@ -19,11 +19,13 @@ Ao longo da análise, busco responder perguntas como:
 O dataset contém registros de vendas entre **março/2024 e março/2025**.
 As principais colunas são:
 
-- `date` e `datetime`: Data e hora da venda
+- `date`: data da venda
+- `datetime`: hora da venda
 - `cash_type`: forma de pagamento 
 - `money`: valor da venda
 - `coffee_name`: tipo de café vendido
 
+Essas informações permitem análises tanto por **produto**, quanto **temporal** (dia, semana, mês).
 
 ### Preparação do Dataset
 
@@ -66,15 +68,15 @@ Alguns achados importantes:
 **3) Insights de Negócio**
 
 A análise aponta oportunidades como:
-* explorar promoções em períodos de baixa (ex.: abril)
-* criar campanhas semanais (ex.: ofertas na terça-feira)
-* destacar produtos de ticket médio alto
-* mapear sazonalidade para replicar meses de sucesso
+* planejar campanhas de marketing em torno de maio e outubro, aproveitando o histórico de picos de vendas.
+* destacar o *Espresso* em promoções de baixo custo para atrair novos clientes e incentivá-los a experimentar outras bebidas de maior ticket médio.  
+* oferecer descontos ou combos às terças-feiras (melhor dia de vendas) e ações especiais para atrair público aos domingos, quando o movimento é menor.  
+* automatizar relatórios mensais para monitorar vendas e faturamento e ajustar rapidamente as ações de marketing.
 
 
 ### Próximos Passos
 
-Para evoluir o projeto, pretendo:
+Para evoluir o projeto:
 * integrar dados de custo para calcular margens de lucro por produto
 * explorar perfis de cliente usando a coluna `card`
 * construir um modelo simples de **previsão de vendas**
