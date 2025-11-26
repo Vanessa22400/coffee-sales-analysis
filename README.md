@@ -14,15 +14,31 @@ Ao longo da análise, busco responder perguntas como:
 - Há dias da semana melhores para vendas?
 - Quais oportunidades estratégicas podem ser extraídas desses padrões?
 
-### Dataset
-Os dados utilizados neste projeto contêm registros de vendas entre março de 2024 e março de 2025. As colunas presentes no dataset são:
+### Sobre o Dataset
+O dataset contém registros de vendas entre **março/2024 e março/2025**.
+As principais colunas são:
 
 - `date` e `datetime`: Data e hora da venda
-- `cash_type`: Tipo de pagamento (cartão ou dinheiro)
-- `money`: Valor da venda
-- `coffee_name`: Nome do produto vendido
+- `cash_type`: forma de pagamento 
+- `money`: valor da venda
+- `coffee_name`: tipo de café vendido
 
-### Estrutura do Projeto
+
+### Preparação do Dataset
+
+As etapas de preparação envolveram:
+1. Conversão das colunas de datas para formato datetime.
+2. Criação de colunas auxiliares:
+* dia da semana
+* mês
+3. Verificação de valores ausentes.
+4. Conferência de tipos e estrutura da tabela.
+
+
+
+
+
+Estrutura do Projeto
 1. Carregar e explorar os dados
 2. Limpar e preparar os dados para análise
 3. Análise exploratória focada nos produtos
