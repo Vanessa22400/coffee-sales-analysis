@@ -14,6 +14,7 @@ Ao longo da análise, busco responder perguntas como:
 - Há dias da semana melhores para vendas?
 - Quais oportunidades estratégicas podem ser extraídas desses padrões?
 
+
 ### Sobre o Dataset
 O dataset contém registros de vendas entre **março/2024 e março/2025**.
 As principais colunas são:
@@ -28,34 +29,62 @@ As principais colunas são:
 
 As etapas de preparação envolveram:
 1. Conversão das colunas de datas para formato datetime.
-2. Criação de colunas auxiliares:
+2. Verificação de valores ausentes.
+3. Criação de colunas auxiliares:
 * dia da semana
 * mês
-3. Verificação de valores ausentes.
-4. Conferência de tipos e estrutura da tabela.
+
+### Análises Realizadas
+
+**1) Análise de Produtos**
+
+* Quantidade de vendas por tipo de café
+* Faturamento por produto
+* Preço médio por café
+* Comparação entre volume × ticket médio
+
+Essa etapa permitiu identificar:
+* produtos mais populares
+* produtos com maior impacto no faturamento
+* itens com ticket médio alto que merecem destaque no mix
 
 
+**2) Análise Temporal**
+
+Foram avaliados padrões ao longo de:
+* dias
+* dias da semana
+* meses
+
+Alguns achados importantes:
+
+* tendência de crescimento nos meses finais do período
+* pico acentuado em outubro/2024
+* dias úteis apresentam maior movimento
+* domingos têm menor volume de vendas
+
+**3) Insights de Negócio**
+
+A análise aponta oportunidades como:
+* explorar promoções em períodos de baixa (ex.: abril)
+* criar campanhas semanais (ex.: ofertas na terça-feira)
+* destacar produtos de ticket médio alto
+* mapear sazonalidade para replicar meses de sucesso
 
 
+### Próximos Passos
 
-Estrutura do Projeto
-1. Carregar e explorar os dados
-2. Limpar e preparar os dados para análise
-3. Análise exploratória focada nos produtos
-4. Análise temporal (diária, semanal e mensal)
-5. Visualização dos dados e extração de insights
-6. Conclusões e recomendações
+Para evoluir o projeto, pretendo:
+* integrar dados de custo para calcular margens de lucro por produto
+* explorar perfis de cliente usando a coluna `card`
+* construir um modelo simples de **previsão de vendas**
+* automatizar relatórios mensais
 
-### Conclusões
+### Ferramentas Utilizadas
 
-quais cafés performam melhor
-
-tendência de crescimento ou queda
-
-horário ou mês com maior volume
-
-preferência por método de pagamento
-
-### Status
-
-Concluído, mas aberto para melhorias futuras.
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Google Colab
