@@ -1,25 +1,18 @@
-# Coffee Sales Analysis
-Análise de vendas de uma cafeteria. Projeto de portfólio em Data Sciense.
-
-## Visão Geral
+# Coffee Sales Analysis: Exploratory Data Analysis (EDA)
 
 Este é um projeto de análise de vendas de uma cafeteria, com foco em entender o comportamento de consumo de diferentes tipos de café, identificar padrões relevantes e explorar insights que possam apoiar decisões estratégicas de marketing e vendas.
 
 Foi um dos meus primeiros projetos autorais em Data Science, criado para praticar análise exploratória, visualização de dados e organização de um fluxo analítico completo.
 
-### Objetivo
-O objetivo deste projeto é analisar os dados de vendas e responder perguntas relacionadas a:
-* desempenho dos diferentes tipos de café
-* comportamento de compra ao longo do tempo
-* formas de pagamento mais utilizadas
-* variações de preço e tendências
+### Objetivos
+Ao longo da análise, busco responder perguntas como:
 
-### Perguntas de Pesquisa
-- Quais são os cafés mais vendidos em termos de quantidade e receita?
+- Quais são os cafés mais vendidos em termos de quantidade e faturamento?
 - Como as vendas variam ao longo do tempo (diariamente, mensalmente)?
-- Quais são os métodos de pagamento mais usados (cartão ou dinheiro)?
-- Existe padrão recorrente(sazonalidade) ou tendências específicas nas vendas?
-- Como o preço médio dos produtos varia entre os diferentes tipos de café?
+- Existe padrão de sazonalidade nas vendas?
+- Como o preço médio varia entre os diferentes tipos de café?
+- Há dias da semana melhores para vendas?
+- Quais oportunidades estratégicas podem ser extraídas desses padrões?
 
 ### Dataset
 Os dados utilizados neste projeto contêm registros de vendas entre março de 2024 e março de 2025. As colunas presentes no dataset são:
